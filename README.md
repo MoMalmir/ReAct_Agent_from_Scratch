@@ -1,8 +1,8 @@
 # ReAct Agent from Scratch
 This repository contains a simple Python implementation of a ReAct Agent using the OpenAI SDK. It allows an LLM to interact with external Python functions to answer questions that require calculation or specific data retrieval.
 
-!["Agent Worflow (https://arxiv.org/pdf/2210.03629.pdf)"](assets/ReAct_overview.png)
-
+!["Agent Worflow"](assets/ReAct_overview.png)
+refrence: https://arxiv.org/pdf/2210.03629.pdf
 ---
 # How It Works: The ReAct Loop
 The agent follows a cognitive cycle inspired by the ReAct (Reason + Act) framework. Instead of guessing a complex answer, the LLM is prompted to think step-by-step.
@@ -20,6 +20,7 @@ The Python script stops the LLM, parses the requested action using Regex, and ru
 ### Observation: 
 The result of the Python function is fed back to the LLM as a new prompt, allowing it to move to the next step or provide the final Answer.
 
+## Our Code Output
 ![Our Code Output](assets/ReAct_our_output.png)
 
 --- 
