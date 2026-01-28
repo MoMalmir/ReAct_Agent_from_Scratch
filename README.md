@@ -1,6 +1,6 @@
 # ReAct Agent from Scratch
-
 This repository contains a simple Python implementation of a ReAct Agent using the OpenAI SDK. It allows an LLM to interact with external Python functions to answer questions that require calculation or specific data retrieval.
+
 ---
 # How It Works: The ReAct Loop
 The agent follows a cognitive cycle inspired by the ReAct (Reason + Act) framework. Instead of guessing a complex answer, the LLM is prompted to think step-by-step.
@@ -17,6 +17,7 @@ The Python script stops the LLM, parses the requested action using Regex, and ru
 
 ### Observation: 
 The result of the Python function is fed back to the LLM as a new prompt, allowing it to move to the next step or provide the final Answer.
+
 --- 
 
 
@@ -40,6 +41,7 @@ average_dog_weight(name): A mock database for dog breed weights.
 ## 3. The query Loop
 
 This is the "Engine." it runs a while loop for a maximum of max_turns (default 5). It uses a Regular Expression (action_re) to detect if the LLM's output contains an instruction to perform an action.
+
 --- 
 
 
