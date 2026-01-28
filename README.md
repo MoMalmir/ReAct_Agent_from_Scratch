@@ -2,6 +2,7 @@
 This repository contains a simple Python implementation of a ReAct Agent using the OpenAI SDK. It allows an LLM to interact with external Python functions to answer questions that require calculation or specific data retrieval.
 
 !["Agent Worflow"](assets/ReAct_overview.png)
+
 refrence: https://arxiv.org/pdf/2210.03629.pdf
 
 ---
