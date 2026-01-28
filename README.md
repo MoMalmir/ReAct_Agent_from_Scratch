@@ -53,7 +53,7 @@ This is the "Engine." it runs a while loop for a maximum of max_turns (default 5
 
 
 # The Building Block for LangGraph
-This code represents the "manual" version of what frameworks like LangGraph automate. Understanding this logic is crucial for moving to LangGraph for several reasons:
+This code represents the "manual" version of what frameworks like LangGraph automate.
 
 ## State Management: 
 In this code, self.messages is the "State." LangGraph formalizes this into a State Graph where each step (Node) updates a shared state object.
